@@ -23,11 +23,10 @@ public abstract class VillagerInitMixin extends MerchantEntity {
     @Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;Lnet/minecraft/village/VillagerType;)V",
             at = @At(value = "TAIL"))
     private void inject(EntityType<? extends VillagerEntity> entityType, World world, VillagerType type, CallbackInfo ci) {
-        // Adiciona um TemptGoal para fazer o villager seguir o jogador quando ele segura uma esmeralda
         this.goalSelector.add(2, new TemptGoal(
-                this,                      // O mob que será tentado (neste caso, o villager)
-                0.6D,                      // Velocidade de movimento ao seguir
-                Ingredient.ofItems(        // Itens que vão tentar o villager
+                this,
+                0.6D,
+                Ingredient.ofItems(
                         Items.EMERALD,
                         Items.EMERALD_BLOCK,
                         Items.EMERALD_ORE,
