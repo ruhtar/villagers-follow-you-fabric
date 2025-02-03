@@ -1,13 +1,12 @@
-# Emerald Follow Mod
+# Villagers follow you
 
 A simple Minecraft mod that makes villagers follow the player when holding an emerald.
 
----
+Tired of carrying villagers around on boats or minecarts? Carry them around like ~~animals~~ friends. 
 
 ## Features
 - Villagers will follow the player if they hold an **emerald**, **emerald block**, **emerald ore**, or **deepslate emerald ore**.
 - Works in both Singleplayer and Multiplayer.
-
 ---
 
 ## Installation
